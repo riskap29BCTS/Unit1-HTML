@@ -6,37 +6,37 @@
     <title>HTML Forms</title>
 </head>
 <body>
-    <form action="">
+    <form action="results.html" method="GET">
         <table>
             <!-- Basic Text -->
             <tr>
                
-                <td> <label for="">Username</label></td>
+                <td> <label for="Username">Username</label></td>
                 <td> <input type="text" name="" id=""></td>
             </tr>
             <!-- Email With Validation -->
             <tr>
-                <td><label for="">Email</label></td>
+                <td><label for="Email">Email</label></td>
                 <td><input type="email" name="" id=""></td>
             </tr>
             <!-- Password(hidden) -->
             <tr>
-                <td><label for="">Password</label></td>
+                <td><label for="Password">Password</label></td>
                 <td><input type="password" name="" id=""></td>
             </tr>
             <!-- phone number -->
              <tr>
-                <td><label for="">Phone Number</label></td>
+                <td><label for="Phone">Phone Number</label></td>
                 <td><input type="tel" name="" id=""></td>
              </tr>
-             <!-- Website -->
+             <!-- date -->
              <tr>
                 <td><label for="date">date</label></td>
                 <td><input type="date" name="" id=""></td>
              </tr>
              <tr>
                 <td><label for="message">Message:</label></td>
-                <td><textarea name="message" id="message" rows="4"></textarea></td>
+                <td><textarea name="message" id="message" rows=9"></textarea></td>
              </tr>
              <!-- radio button (multiple choice) -->
             <tr>
@@ -45,9 +45,30 @@
                     <label><input type="radio" name="grade" value="9">9th grade</label>
                     <label><input type="radio" name="grade" value="10">10th Grade</label>
                 </td>
-                <!-- select drop-down -->
             </tr>
+            <!-- check boxes -->
+            <tr>
+                <td>Grade Level</td>
+                <td>
+                    <label><input type="checkbox" name="grade" value="9">9th grade</label>
+                    <label><input type="checkbox" name="grade" value="10">10th Grade</label>
+                </td>
+            </tr>
+            <!-- select drop-down -->
+             <tr>
+                <td>Favorite sport</td>
+                <td>
+                    <select name="sports" id="sports">select
+                        <option value="soccer">Soccer</option>
+                        <option value="basketball">Baseball</option>
+                        <option value="baseball">Basketball</option>
+                        <option value=""></option>
+                    </select>
+
+                </td>
+             </tr>
         </table>
+        <button type="submit">Submit</button>    
     </form>
 </body>
 </html>
